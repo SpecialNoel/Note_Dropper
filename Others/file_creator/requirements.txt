@@ -1,0 +1,7 @@
+# requirements.txt
+
+# To run this script: pip install --no-cache-dir -r requirements.txt
+
+openpyxl   # for create_excel.py
+pillow     # for create_img.py
+reportlab  # for create_pdf.py
