@@ -1,0 +1,8 @@
+// note.txt
+// This file is used as a notepad for dropping related notes of Crypto101.pdf.
+
+
+Modes of Operation
+1. ECB: Electronic Code Book
+2. CBC: Cipher Block Chaining
+

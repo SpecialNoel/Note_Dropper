@@ -1,0 +1,33 @@
+<!-- home.html -->
+
+{% extends "base.html" %}
+
+<!-- Head -->
+{% block head %} 
+{{ super() }} 
+{% endblock %}
+
+<!-- Title -->
+{% block title %} 
+Home Page 
+{% endblock %}
+
+<!-- Body -->
+{% block body %}
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js"></script>
+
+<script src="../static/client.js"></script>
+
+<form action="/">
+    <label>Enter room id: </label>
+    <input type="text" name="room-id" required />
+    <input type="submit" value="Enter Room" id="submit-room-id"/>
+</form>
+
+<h3>Current connecting clients:</h3>
+<div id="client-list"></div>
+
+<script>execute_client();</script>
+
+{% endblock %}
